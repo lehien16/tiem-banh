@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pastry Shop</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"> 
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- custom js file link
+    <link rel="stylesheet" href="js/script.js"> -->
+</head>
+<body>
+    
+<!-- header section starts -->
+
+<header>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <a href="#" class="logo">TPS<span class="icon-pastry">✨</span></a>
+
+    <nav class="navbar">
+        <a href="#home">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#products">Sản phẩm</a>
+        <a href="#review">Đánh giá</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+
+    <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#login" class="fas fa-user" id="user"></a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- user section starts -->
+
+<section id="login" class="login">
+
+    <!-- <div class="login-box">
+
+        <form action="">
+
+            <h2>ĐĂNG NHẬP</h2>
+
+            <div class="input-box">
+
+                <form action="">
+                    <input type="text" placeholder="Tên đăng nhập" class="box">
+                    <input type="password" placeholder="Mật khẩu" class="box">
+                </form>
+
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Tự động đăng nhập lần sau </label>
+                <a href="#">Quên mật khẩu?</a>
+            </div>
+
+            <button type="submit">Đăng nhập</button>
+
+            <div class="register-link">
+                <p>Chưa có tài khoản? <a href="#">Đăng ký</a></p>
+            </div>
+
+        </form>
+
+    </div> -->
+
+    <div class="box-container">
+        <div class="login-box">
+        <h2>ĐĂNG NHẬP</h2>
+        <input type="text" placeholder="Tên đăng nhập" id="username">
+        
+        <div class="password-box">
+            <input type="password" placeholder="Mật khẩu" id="password">
+            <span class="toggle-eye" onclick="togglePassword()">👁️</span>
+        </div>
+        
+        <div class="remember">
+            <input type="checkbox" id="remember">
+            <label for="remember">Tự động đăng nhập lần sau</label>
+        </div>
+        
+        <button>Đăng nhập</button>
+        <div>
+            <p></p>
+            <a href="#">Quên mật khẩu?</a>
+            <a href="#">Đăng ký</a>
+        </div>
+
+        <span class="lookup-link" onclick="toggleLookup()">Tra cứu tài khoản</span>
+        </div>
+    </div>
+
+    <!-- Panel tra cứu -->
+    <div class="lookup-panel" id="lookupPanel">
+        <input type="text" placeholder="Nhập tên cần tìm..." id="searchBox">
+        <button>Tìm kiếm</button>
+
+        <table>
+        <thead>
+            <tr>
+            <th>Họ tên</th>
+            <th>Tên đăng nhập</th>
+            <th>Số điện thoại</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Yulia Le</td>
+            <td>yulia7</td>
+            <td>012*******</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+</section>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- user section ends -->
+
+<!-- home section starts -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>THE PASTRY SHOP</h3>
+        <p>Chào mừng bạn đến với tiệm bánh ngọt của chúng tôi – nơi mỗi chiếc bánh là một tác phẩm nghệ thuật. 
+        Từ hương vị mềm mại đến thiết kế tinh tế, chúng tôi mang đến những trải nghiệm ngọt ngào và ấm áp cho mọi khoảnh khắc.</p>
+        <a href="#" class="btn">Đặt bánh</a>
+    </div>
+
+</section>
+
+<!-- home section ends  -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span> Giới thiệu </span> tiệm bánh </h1>
+
+    <div class="row">
+
+        <div class="video-container">
+            <video src="images/about.mp4" loop autoplay controls></video>
+        </div>
+
+        <div class="content">
+            <h3>Tại sao chọn chúng tôi?</h3>
+            <p>Tất cả nguyên liệu đều được chọn lọc kỹ lưỡng, không sử dụng chất bảo quản, đảm bảo an toàn và vị ngon tự nhiên.</p>
+            <p>Đội ngũ thợ làm bánh có tay nghề cao, sáng tạo ra những hương vị đặc trưng, khó quên.</p>
+            <p>Thiết kế tinh tế – đẹp đến từng chi tiết.</p>
+
+            <input type="checkbox" id="toggle-more" class="toggle-checkbox">
+
+            <div class="more-text">
+                <p>Dịch vụ chuyên nghiệp, hỗ trợ khách hàng tận tình – bạn chỉ việc chọn bánh và chờ tận hưởng.</p>
+                <p>Mỗi chiếc bánh là một câu chuyện, là tình yêu mà chúng tôi muốn gửi gắm đến bạn.</p>
+            </div>
+
+            <label for="toggle-more" class="btn-read-more"></label>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends  -->
+
+<!-- icons section starts  -->
+
+<section class="icons-container">
+
+    <div class="icons">
+        <img src="images/free-shipping.png" alt="">
+        <div class="info">
+            <h3>Giao hàng miễn phí</h3>
+            <span>Tất cả mọi đơn bánh</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/refund.png" alt="">
+        <div class="info">
+            <h3>2 giờ đổi trả</h3>
+            <span>Cam kết hoàn tiền</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/offer.png" alt="">
+        <div class="info">
+            <h3>Ưu đãi và quà tặng</h3>
+            <span>Tất cả mọi đơn bánh</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/payment-protection.png" alt="">
+        <div class="info">
+            <h3>Thanh toán an toàn</h3>
+            <span>Mọi giao dịch đều được mã hóa và bảo vệ thông tin tuyệt đối</span>
+        </div>
+    </div>
+
+</section>
+<!-- icons section ends  -->
+
+<!-- products section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> Sản phẩm <span> mới nhất </span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <span class="discount">-15%</span>
+            <div class="image">
+                <img src="images/tart-trung.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Tart trứng ngàn lớp</h3>
+                <div class="price"> 17,000 <span>20,000</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-5%</span>
+            <div class="image">
+                <img src="images/bo-toi.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Bánh mì bơ tỏi</h3>
+                <div class="price"> 19,000 <span>20,000</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-12%</span>
+            <div class="image">
+                <img src="images/croissant.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Croissant trứng muối</h3>
+                <div class="price"> 22,000 <span>25,000</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">0%</span>
+            <div class="image">
+                <img src="images/su-kem.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Bánh su kem (Hộp 12 cái lớn)</h3>
+                <div class="price"> 45,000 <span></span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">0%</span>
+            <div class="image">
+                <img src="images/brownie.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Chocolate brownie</h3>
+                <div class="price"> 18,000 <span></span></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+ <!-- products section ends  -->
+
+ <!-- review section starts  -->
+
+ <section class="review" id="review">
+
+    <h1 class="heading"> <span> Đánh giá </span> của khách hàng </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Bánh ngọt ở đây thật sự rất ngon! Vị ngọt vừa phải, không bị gắt, lớp kem mềm mịn, cốt bánh ẩm và thơm. Trang trí tinh tế, bắt mắt. Mình đặc biệt thích bánh tiramisu và red velvet – hương vị đúng chuẩn tiệm cao cấp. Sẽ quay lại nhiều lần nữa!</p>
+            <div class="user">
+                <img src="images/le-bil.jpg" alt="">
+                <div class="user-info">
+                    <h3>Le Bil</h3>
+                    <span>Chào mừng khách hàng</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Một chiếc bánh không chỉ ngon mà còn “visual”! 🧁 Vỏ bánh mềm tan trong miệng, lớp kem béo ngậy nhưng không hề ngấy. Ai mê đồ ngọt chắc chắn nên thử một lần! 💖</p>
+            <div class="user">
+                <img src="images/emily.jpg" alt="">
+                <div class="user-info">
+                    <h3>Emily</h3>
+                    <span>Chào mừng khách hàng</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Ngon tuyệt! Béo nhẹ, không ngấy!</p>
+            <div class="user">
+                <img src="images/minh-minh.jpg" alt="">
+                <div class="user-info">
+                    <h3>Minh Minh</h3>
+                    <span>Chào mừng khách hàng</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+    </div>
+ </section>
+<!-- review section ends  -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span> Liên hệ </span> chúng tôi </h1>
+
+    <div class="row">
+
+        <form action="">
+            <input type="text" placeholder="Họ tên" class="box">
+            <input type="email" placeholder="Email" class="box">
+            <input type="number" placeholder="Số" class="box">
+            <textarea name="" class="box" placeholder="Tin nhắn" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="Gửi tin nhắn" class="btn">
+        </form>
+
+        <div class="image">
+            <img src="images/contact.png" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+ <!-- contact section ends  -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Liên kết nhanh</h3>
+            <a href="#home">Trang chủ</a>
+            <a href="#about">Giới thiệu</a>
+            <a href="#products">Sản phẩm</a>
+            <a href="#review">Đánh giá</a>
+            <a href="#contact">Liên hệ</a>
+        </div>
+
+        <div class="box">
+            <h3>Thông tin liên lạc</h3>
+            <a href="#">079xxxxxxx</a>
+            <a href="#">lehien161205@gmail.com</a>
+            <a href="#">xxx Phan Bội Châu, TP.Huế</a>
+            <img src="images/payment.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> Được tạo bởi <span> Le Bil </span> | Mọi quyền được bảo lưu </div>
+
+</section>
+
+<!-- footer section ends  -->
+
+</body>
+</html>>
